@@ -9,14 +9,14 @@ The project focuses on creating a clean and engaging school website experience w
 ## Live Demo
 
 **Deployment:**  
-`[ADD DEPLOYED VERCEL / NETLIFY URL]`
+`https://tis-homepage-redesign-six.vercel.app/`
 
 ---
 
 ## GitHub Repository
 
 **Repository:**  
-`[ADD PUBLIC GITHUB REPOSITORY URL]`
+`https://github.com/Pranayrebeyro/tis-homepage-redesign`
 
 ---
 
