@@ -14,7 +14,7 @@ https://tis-homepage-redesign.vercel.app/
 ## GitHub Repository
 
 **Repository:**  
-https://github.com/Pranayrebeyro/tis-homepage-redesign
+https://tis-homepage-redesign-six.vercel.app/
 
 ---
 
