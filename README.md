@@ -1,181 +1,158 @@
 # Tulas International School — Homepage Redesign
 
-A modern, responsive homepage redesign for **Tulas International School (TIS)**, developed as part of the Frontend Developer assignment.
+A modern, responsive redesign of the **Tulas International School (TIS)** homepage, built as a frontend development assignment.
 
-The project focuses on creating a clean and engaging school website experience with responsive layouts, smooth interactions, purposeful animation, and reusable React components while maintaining the visual identity and content direction of TIS.
+The project focuses on creating a polished web experience while retaining the school's core identity, content direction, and educational focus. It includes smooth animations, responsive layouts, interactive elements, dark/light mode, and performance-conscious image handling.
 
 ---
 
 ## Live Demo
 
-**Deployment:**  
-`https://tis-homepage-redesign-six.vercel.app/`
-
----
+**Live Website:**  
+https://tis-homepage-redesign.vercel.app/
 
 ## GitHub Repository
 
 **Repository:**  
-`https://github.com/Pranayrebeyro/tis-homepage-redesign`
+https://github.com/Pranayrebeyro/tis-homepage-redesign
 
 ---
 
 ## Project Overview
 
-The objective of this project is to redesign the Tulas International School homepage with a modern, responsive, and interactive user experience.
+The goal of this project was to redesign the Tulas International School homepage into a modern and engaging single-page experience.
 
 The implementation focuses on:
 
-- Clear visual hierarchy
+- Clean and maintainable React architecture
 - Responsive design across mobile, tablet, and desktop
-- Smooth page transitions and animations
-- Intuitive navigation
+- Smooth entrance and scroll-based animations
 - Interactive UI elements
-- Reusable React components
-- Clean and maintainable project structure
-- Accessibility and reduced-motion considerations
+- Light and dark themes
+- Performance-conscious image loading
+- Accessible and semantic HTML structure
+- Clear component separation
 
-The homepage is organized into focused sections covering the school's introduction, academics, campus, student life, and admissions.
+The design uses TIS's educational identity as the foundation while introducing a more contemporary visual style.
 
 ---
 
-## Key Features
+## Features
 
-### 1. Custom Cursor
+### Custom Cursor
 
-A custom cursor interaction is implemented for desktop devices with a fine pointer.
+A custom mouse-following cursor is implemented for devices with a fine pointer.
 
-The cursor uses spring-based motion and responds to interactive elements such as:
+The cursor reacts to interactive elements such as:
 
-- Links
+- Navigation links
 - Buttons
-- Navigation controls
-- Interactive UI elements
+- CTA links
+- Interactive controls
 
-The custom cursor is automatically disabled on devices where it is not appropriate.
+The cursor is disabled on devices where a mouse pointer is not available.
 
 ---
 
-### 2. Scroll-Triggered Animations
+### Scroll-Triggered Reveals
 
-Content sections use scroll-triggered reveal animations to create a smoother browsing experience.
+Sections and content elements use viewport-based entrance animations.
 
-Animations include:
+Elements smoothly transition into view using:
 
-- Fade-in effects
+- Opacity
 - Vertical movement
-- Direction-based reveals
-- Hero entrance animations
+- Scale transitions
 
-Animations are triggered as sections enter the viewport rather than running continuously.
+Animations are implemented using **Framer Motion**.
 
 ---
 
-### 3. Light / Dark Theme
+### Theme Switcher
 
-The website includes a theme switcher allowing users to switch between:
+The website supports both:
 
 - Light mode
 - Dark mode
 
-The selected theme is stored using `localStorage` so the preference can persist between visits.
+The selected theme is stored using `localStorage`, allowing the preference to persist between visits.
 
-The interface also respects the user's system color preference when no saved theme preference exists.
-
----
-
-### 4. Scroll Progress Indicator
-
-A progress indicator is displayed at the top of the page while scrolling.
-
-The indicator is connected to the page scroll position and uses a spring animation for smoother movement.
+If no saved preference exists, the application can use the user's system color preference.
 
 ---
 
-### 5. Responsive Navigation
+### Scroll Progress Bar
+
+A progress indicator is displayed at the top of the page and updates as the user scrolls.
+
+The progress animation uses Framer Motion's scroll APIs and spring-based motion for a smoother visual transition.
+
+---
+
+### Responsive Navigation
 
 The navigation adapts to different screen sizes.
 
-#### Desktop
-
-- Full navigation menu
-- Theme switcher
-- Enquiry CTA
-
-#### Mobile / Tablet
-
-- Compact navigation
-- Theme switcher
-- Hamburger menu
-- Expandable navigation panel
+Desktop users receive a full navigation layout, while smaller screens use a mobile navigation menu.
 
 ---
 
-### 6. Responsive Layout
+### Responsive Hero Section
 
-The homepage is designed for:
+The Hero section adapts across:
 
-- Mobile devices
-- Tablets
-- Desktop screens
+- Mobile
+- Tablet
+- Laptop
+- Desktop
 
-The layout adapts across viewport sizes using responsive Tailwind CSS utilities.
-
-Special attention has been given to:
-
-- Navigation
-- Hero layout
-- Typography
-- Images
-- Content spacing
-- Buttons
-- Section grids
-- Footer layout
+The hero image uses a responsive aspect ratio and optimized WebP format to reduce unnecessary image payload.
 
 ---
 
-## Homepage Sections
+### Interactive Sections
 
-The page is structured into the following sections:
+The homepage contains dedicated sections for:
 
-1. **Hero**
-2. **School Statistics**
-3. **About TIS**
-4. **Academics**
-5. **Campus**
-6. **Student Life**
-7. **Admissions**
-8. **Footer**
+- Hero
+- Statistics
+- About
+- Academics
+- Campus
+- Student Life
+- Admissions
 
-Each section is implemented as a separate React component to keep the application modular and maintainable.
+Each section has its own component to keep the codebase organized and maintainable.
 
 ---
 
-## Technology Stack
+## Tech Stack
 
 ### Frontend
 
-- **React**
-- **Vite**
-- **JavaScript (ES6+)**
+- React
+- Vite
+- JavaScript (JSX)
 
 ### Styling
 
-- **Tailwind CSS**
+- Tailwind CSS
 
 ### Animation
 
-- **Framer Motion**
+- Framer Motion
 
 ### Icons
 
-- **Lucide React**
+- Lucide React
 
-### Development
+### Code Quality
 
-- **ESLint**
-- **Git**
-- **GitHub**
+- ESLint
+
+### Deployment
+
+- Vercel
 
 ---
 
@@ -187,6 +164,7 @@ tis-homepage-redesign/
 ├── public/
 │
 ├── src/
+│   │
 │   ├── assets/
 │   │   └── images/
 │   │       ├── campus/
@@ -222,7 +200,7 @@ tis-homepage-redesign/
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
-├── package-lock.json
 ├── package.json
-├── README.md
-└── vite.config.js
+├── package-lock.json
+├── vite.config.js
+└── README.md
